@@ -64,9 +64,13 @@
 .transaction-box {
   padding: 1.6rem;
   background: #fff;
-  border: 0.1rem solid #e7e7e7;
-  border-radius: 1.2rem;
+  border-top: 0.1rem solid #e7e7e7;
+  border-right: 0.1rem solid #e7e7e7;
+  border-left: 0.1rem solid #e7e7e7;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
   height: 100%;
+  overflow-y: scroll;
 }
 
 .tr-form {
@@ -75,6 +79,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.filter-btn {
+  border: none;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 0.7rem;
+  padding: 0.6rem 1.2rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .tr-bottom-box {
