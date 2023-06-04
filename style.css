@@ -62,20 +62,21 @@
 /* ///////// Transaction /////////////////// */
 /* ///////////////////////////////////////// */
 .transaction-box {
-  padding: 1.6rem;
+  padding: 1.6rem 1.6rem 0;
   background: #fff;
   border-top: 0.1rem solid #e7e7e7;
   border-right: 0.1rem solid #e7e7e7;
   border-left: 0.1rem solid #e7e7e7;
   border-top-left-radius: 1.2rem;
   border-top-right-radius: 1.2rem;
-  height: 100%;
-  overflow-y: scroll;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 .tr-form {
   width: 100%;
-  padding-bottom: 1.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,23 +89,23 @@
   color: #fff;
   text-transform: capitalize;
   border-radius: 0.7rem;
-  padding: 0.6rem 1.2rem;
+  padding: 1.2rem 1.6rem;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .tr-bottom-box {
-  padding-top: 1.6rem;
+  overflow-y: scroll;
 }
 
 .tr-list {
+  list-style: none;
+  padding-top: 1.6rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
   gap: 1.6rem;
 }
 
 .tr-list li {
-  width: 100%;
   font-size: 1.4rem;
   font-weight: 400;
   display: flex;
